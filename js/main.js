@@ -1,6 +1,6 @@
 (function($) {
 
-	"use strict";	
+	"use strict";
 
   	$(".main-menu a").click(function(){
 		var id =  $(this).attr('class');
@@ -8,7 +8,7 @@
 		$('a.active').removeClass('active');
     	$(this).addClass('active');
 		$("#menu-container .content").slideUp('slow');
-		$("#menu-container #menu-"+id[1]).slideDown('slow');		
+		$("#menu-container #menu-"+id[1]).slideDown('slow');
 		$("#menu-container .homepage").slideUp('slow');
 		return false;
 	});
@@ -54,6 +54,13 @@
     $('.show-menu a').click(function() {
     	$('.show-menu').fadeOut('slow');
     });
+	// $(".project-img").click(function (){
+	// 	//console.log("dd");
+	// 	$("#intro").animate({
+	// 		transform: 'rotateZ(180deg)'
+	// 	}, 500);
+	//
+	// })
 
 
 })(jQuery);
